@@ -1,0 +1,127 @@
+
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #ffcc00 !important;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.1);
+}
+
+/* Offers Section */
+#offers {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom right, #333, #555);
+}
+
+#offers h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+#offers .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#offers .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#offers .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#offers .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+#offers .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#offers .card-text {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Button Styling */
+#offers button {
+    background-color: #ffcc00;
+    border: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#offers button:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    animation: fadeInUp 1.5s ease;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #ffcc00;
+    }
+    50% {
+        box-shadow: 0 0 20px #ffcc00;
+    }
+    100% {
+        box-shadow: 0 0 5px #ffcc00;
+    }
+}
+
+/* Special Effects */
+#offers .card-title:hover {
+    animation: glow 1.5s infinite;
+}
+
